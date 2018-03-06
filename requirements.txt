@@ -1,1 +1,1 @@
-dateutil.relativedelta
+python-dateutil
