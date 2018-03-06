@@ -5,7 +5,7 @@ from date_calc import Retirement
 class TestBetween(unittest.TestCase):
 
 	def test_days(self):
-		days = Retirement(datetime.date(1967, 6, 2), datetime.date(1968, 6, 3))
+		days = Retirement(datetime.date(1967, 6, 2), datetime.date(1968, 6, 2))
 
 		self.assertEqual(days.lifetime, 366)
 		
