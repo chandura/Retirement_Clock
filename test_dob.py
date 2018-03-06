@@ -26,6 +26,3 @@ class TestBetween(unittest.TestCase):
 
 		self.assertEqual(str(pessimistic.pessimistic), '2032-06-02')
 		self.assertEqual(pessimistic.pessimistic_days, 4749)
-
-if __name__ == '__main__':
-	unittest.main()
