@@ -7,7 +7,7 @@ class TestBetween(unittest.TestCase):
 	def test_days(self):
 		days = Retirement(datetime.date(1967, 6, 2), datetime.date(1968, 6, 2))
 
-		self.assertEqual(days.lifetime, 366)
+		self.assertEqual(days.lifetime, 367)
 		
 	def test_optimisitc(self):
 		optimistic = Retirement(datetime.date(1967, 6, 2), datetime.date(2019, 6, 2))
