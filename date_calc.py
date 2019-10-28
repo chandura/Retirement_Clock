@@ -31,7 +31,7 @@ class Retirement:
 	@property
 	def optimistic_years(self):
 		target_date = self.dob + relativedelta(years=+define_optimistic)
-		years = (target_date.year - self.progress.year)
+		years = (target_date.year - self.progress.year - 1)
 		return years
 
 	@property
@@ -52,7 +52,7 @@ class Retirement:
 	@property
 	def pragmatic_years(self):
 		target_date = self.dob + relativedelta(years=+define_pragmatic)
-		years = (target_date.year - self.progress.year)
+		years = (target_date.year - self.progress.year -1)
 		return years
 
 	@property
@@ -72,7 +72,7 @@ class Retirement:
 	@property
 	def pessimistic_years(self):
 		target_date = self.dob + relativedelta(years=+define_pessimistic)
-		years = (target_date.year - self.progress.year)
+		years = (target_date.year - self.progress.year -1)
 		return years
 
 	@property
